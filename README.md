@@ -6,4 +6,5 @@ This project just tested using Docker to build Go binary with a Makefile that wi
 *  `make` will (perform all these in docker container):
    *  perform `depinit` if no Gopkg.toml exists to manage the dependencies
    *  perform `dep` to update the dependencies packages
+   *  perform `lint` to use **golint** check the style mistake
    *  perform `build` if the **app** binary is not up-to-date
