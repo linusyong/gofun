@@ -10,10 +10,10 @@ dep:
 
 build:		app
 
-app:
+app:		main.go
 	docker run --rm -v ${PWD}:/go/src/myapp -w /go/src/myapp golangdep:alpine go build -o app
 
-golangdep:
+dockerimage:
 	docker build -t golangdep:alpine .
 
 lint:
