@@ -1,0 +1,12 @@
+{
+  "Event":"teardown",
+  "History":"build_history",
+  "Profile":{
+    "pipelineBranch":"feature-IDMAN-1957",
+    "pipelineBuildNumber":"43",
+    "pipelineApplication":"isamlifecyclemanagement",
+    "pipelineService":"digitaliam",
+    "pipelineDomain":"my.fqdn.net",
+    "end":"end"
+  }
+}
