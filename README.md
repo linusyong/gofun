@@ -4,7 +4,7 @@ This project just tested using Docker to build Go binary with a Makefile that wi
 # Requirements
 *  [jq](https://stedolan.github.io/jq/)
 *  [curl](https://curl.haxx.se/)
-*  [musl libc](https://www.musl-libc.org/)
+*  [musl libc](https://www.musl-libc.org/)   
 _On Ubuntu simply `sudo apt install jq curl musl`_
 
 # Quick Start
