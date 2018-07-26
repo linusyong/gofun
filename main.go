@@ -24,6 +24,7 @@ type Message struct {
   Webseal [2]string `json:"webseal"`
 }
 
+// This function contruct the string array of 2 webseal names
 func ConstructWebsealNames(strs ...string) [2]string {
   var ret [2]string
   var sb strings.Builder
@@ -39,6 +40,10 @@ func ConstructWebsealNames(strs ...string) [2]string {
 
 func main() {
   router := gin.Default()
+
+  router.GET("/event/:name", func(c *gin.Context) {
+    c.JSON(http.StatusOK, gin.H{"event":strings.Replace(c.Param("name"), "_", "/", -1)})
+  })
 
   router.POST("/event", func(c *gin.Context) {
     var message Message
