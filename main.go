@@ -24,7 +24,7 @@ type Message struct {
   Webseal [2]string `json:"webseal"`
 }
 
-// This function contruct the string array of 2 webseal names
+// ConstructWebsealNames contructs the string array of 2 webseal names
 func ConstructWebsealNames(strs ...string) [2]string {
   var ret [2]string
   var sb strings.Builder
