@@ -7,4 +7,5 @@ RUN apk --no-cache add git && \
     go get github.com/onsi/gomega/... && \
     mkdir -p /.cache && \
     chmod -R 777 /go /.cache
-    
+
+ENTRYPOINT ["/bin/sh", "-c"]
